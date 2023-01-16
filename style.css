@@ -1,0 +1,212 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  background-color: rgb(225, 74, 74);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+.nav-container .nav-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+}
+.nav-items a:hover {
+  background-color: rgb(118, 46, 185);
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(26, 24, 24);
+}
+#welcome-section h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+#welcome-section p {
+  color: rgb(211, 86, 86);
+  font-size: 40px;
+}
+#projects {
+  display: flex;
+  background-color: rgb(99, 109, 176);
+  flex-direction: column;
+  align-items: center;
+}
+#projects h1 {
+  color: white;
+  font-size: 50px;
+  border-bottom: 2px solid white;
+}
+.projects_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+#bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(32, 16, 46);
+  height: 100vh;
+}
+#bottom h1 {
+  color: white;
+  font-size: 60px;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+#bottom p {
+  color: white;
+  font-size: 30px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.links a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  transition: width 2s, height 2s, transform 0.4s;
+}
+.links a:hover {
+  transform: translateY(5px);
+}
+#profile-link{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(27, 15, 15);
+    margin: 20px;
+
+}
+#profile-link:hover{
+    background-color: rgb(94, 56, 96); 
+}
+
+/* for Extra small devices such as phone */
+@media (max-width:600px){
+.col-xs-1{width: 8.33%;}
+.col-xs-2{width: 16.66%;}
+.col-xs-3{width: 25%;}
+.col-xs-4{width: 32.32%;}
+.col-xs-5{width: 41.66%;}
+.col-xs-6{width: 50%;}
+.col-xs-7{width: 58.33%;}
+.col-xs-8{width: 66.66%;}
+.col-xs-9{width: 75%;}
+.col-xs-10{width: 83.33%;}
+.col-xs-11{width: 91.666%;}
+.col-xs-12{width: 100%;}
+}
+/* small devices such as tablets and large phones */
+@media(min-width:600px){
+.col-sm-1{width: 8.33%;}
+.col-sm-2{width: 16.66%;}
+.col-sm-3{width: 25%;}
+.col-sm-4{width: 32.32%;}
+.col-sm-5{width: 41.66%;}
+.col-sm-6{width: 50%;}
+.col-sm-7{width: 58.33%;}
+.col-sm-8{width: 66.66%;}
+.col-sm-9{width: 75%;}
+.col-sm-10{width: 83.33%;}
+.col-sm-11{width: 91.666%;}
+.col-sm-12{width: 100%;}
+}
+/* medium devices such as landscape tablets and large phones */
+@media (min-width: 768px){
+.col-md-1{width: 8.33%;}
+.col-md-2{width: 16.66%;}
+.col-md-3{width: 25%;}
+.col-md-4{width: 32.32%;}
+.col-md-5{width: 41.66%;}
+.col-md-6{width: 50%;}
+.col-md-7{width: 58.33%;}
+.col-md-8{width: 66.66%;}
+.col-md-9{width: 75%;}
+.col-md-10{width: 83.33%;}
+.col-md-11{width: 91.666%;}
+.col-md-12{width: 100%;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px){
+.col-lg-1{width: 8.33%;}
+.col-lg-2{width: 16.66%;}
+.col-lg-3{width: 25%;}
+.col-lg-4{width: 32.32%;}
+.col-lg-5{width: 41.66%;}
+.col-lg-6{width: 50%;}
+.col-lg-7{width: 58.33%;}
+.col-lg-8{width: 66.66%;}
+.col-lg-9{width: 75%;}
+.col-lg-10{width: 83.33%;}
+.col-lg-11{width: 91.666%;}
+.col-lg-12{width: 100%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media  (min-width: 1200px){
+  .col-xl-1{width: 8.33%;}
+  .col-xl-2{width: 16.66%;}
+  .col-xl-3{width: 25%;}
+  .col-xl-4{width: 32.32%;}
+  .col-xl-5{width: 41.66%;}
+  .col-xl-6{width: 50%;}
+  .col-xl-7{width: 58.33%;}
+  .col-xl-8{width: 66.66%;}
+  .col-xl-9{width: 75%;}
+  .col-xl-10{width: 83.33%;}
+  .col-xl-11{width: 91.666%;}
+  .col-xl-12{width: 100%;}
+  }
+  
+  #section_1{
+    background-color: yellow;
+  }
+  
+  #section_2{
+    background-color: green;
+  }
+  
+  #section_3{
+    background-color: blue;
+  }
+  .row{
+    margin: 0 auto;
+    width: 100%;
+  }
+.row > div{
+  display: inline-block;
+}
